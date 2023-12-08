@@ -1,6 +1,6 @@
 class SortedList {
   constructor() {
-    this.item = [];
+    this.items = [];
     this.length = this.items.length;
   }
 
@@ -40,7 +40,7 @@ class SortedList {
     if(this.length === 0) {
       return 0;
     } else {
-      return this.items.reduece ((a, b) => a + b);
+      return this.items.reduce ((a, b) => a + b);
     }
   }
 
@@ -54,6 +54,6 @@ class SortedList {
 }
 
 const sorted = new SortedList;
-console.long(sorted.items);
+console.log(sorted.items);
 
 module.exports = SortedList;
